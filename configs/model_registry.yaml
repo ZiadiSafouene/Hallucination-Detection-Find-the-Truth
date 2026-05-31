@@ -1,0 +1,22 @@
+models:
+  fanar:
+    model_name_or_path: "QCRI/Fanar-1-9B-Instruct"
+    tokenizer_name_or_path: "QCRI/Fanar-1-9B-Instruct"
+    device: "cuda"
+    dtype: "bfloat16"
+    max_new_tokens: 512
+    temperature: 0.0
+    top_p: 1.0
+    batch_size: 4
+    trust_remote_code: true
+
+  allam:
+    model_name_or_path: "humain-ai/ALLaM-7B-Instruct-preview"
+    tokenizer_name_or_path: "humain-ai/ALLaM-7B-Instruct-preview"
+    device: "cuda"
+    dtype: "bfloat16"
+    max_new_tokens: 512
+    temperature: 0.0
+    top_p: 1.0
+    batch_size: 4
+    trust_remote_code: true

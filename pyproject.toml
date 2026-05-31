@@ -1,0 +1,22 @@
+[project]
+name = "hallucination_detection_find_truth"
+version = "0.1.0"
+description = "Modular inference and evaluation pipeline for Arabic hallucination detection and multiple-choice answer selection."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "torch>=2.1.0",
+  "transformers>=4.46.0",
+  "scikit-learn>=1.3.0",
+  "pyyaml>=6.0",
+  "tqdm>=4.0.0",
+  "datasets>=2.18.0",
+]
+
+[project.scripts]
+run = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"

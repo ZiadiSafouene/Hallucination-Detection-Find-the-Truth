@@ -1,0 +1,19 @@
+experiment:
+  name: "fanar_v1"
+  output_dir: "outputs"
+  log_dir: "logs"
+
+paths:
+  benchmark_project_dir: "/home/dell/data1/arabic_hallu_benchmark"
+
+models:
+  "QCRI/Fanar-1-9B-Instruct": false
+  "humain-ai/ALLaM-7B-Instruct-preview": true
+
+domains:
+  islamic:
+    enabled: true
+    data_dir: "/home/dell/Hallucinatuion/Hallucination-Detection-Find-the-Truth/data/islamic/dev_subtask3-1_gold.json"
+  general_culture:
+    enabled: false
+    data_dir: "/home/dell/Hallucinatuion/Hallucination-Detection-Find-the-Truth/data/general_culture/dev_subtask3-2_gold.json"
