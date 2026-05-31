@@ -50,19 +50,31 @@ Each input example contains:
 #### Input Example
 
 ```json
-{
-  "id": "example_001",
-  "question": "Arabic question here",
-  "generated_answer": "LLM-generated answer here",
-  "options": {
-    "A": "First candidate answer",
-    "B": "Second candidate answer",
-    "C": "Third candidate answer",
-    "D": "Fourth candidate answer",
-    "E": "Fifth candidate answer",
-    "F": "Sixth candidate answer"
-  }
-}
+  {
+   "id": "islamicHallucination_9",
+    "question": "ما هي السورة القرآنية التي فيها موضعان  للسجود؟",
+    "generated_answer": "سورة الحج، الآيتان 18 و29.",
+    "gold_answer": "سورة الحج، وموضعا السجود فيها في الآيتين 18 و77",
+    "generator_model": "QCRI/Fanar-1-9B-Instruct",
+    "label": "hallucination",
+    "hallucinations": [
+      {
+        "span_start": 23,
+        "span_end": 25,
+        "hallucinated_span": "29",
+        "explanation": "الإجابة الأساسية صحيحة؛ السورة التي فيها موضعان للسجود هي سورة الحج، لكن موضع السجدة الثانية ليس الآية 29، بل الآية 77."
+      }
+    ],
+    "options": {
+      "A": "السورة القرآنية التي فيها موضعان للسجود هي سورة الحج، وموضعا السجود فيها في الآيتين 18 و77.",
+      "B": "سورة الحج، الآيتان 18 و29.",
+      "C": "السورة القرآنية التي فيها موضعان للسجود هي سورة السجدة، لأن اسمها يدل على السجود.",
+      "D": "السورة القرآنية التي فيها موضعان للسجود هي سورة العلق، لأنها ختمت بالأمر بالسجود.",
+      "E": "السورة القرآنية التي فيها موضعان للسجود هي سورة النجم، لأنها من سور سجود التلاوة.",
+      "F": "السورة القرآنية التي فيها موضعان للسجود هي سورة فصلت، لأن فيها آية سجدة مشهورة."
+    },
+    "answer": "A"
+  },
 ```
 
 ### Output Format
