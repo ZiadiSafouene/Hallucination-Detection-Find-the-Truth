@@ -100,8 +100,7 @@ Each prediction must contain:
 ```json
 {
   "id": "example_002",
-  "label": "no_hallucination",
-  "correct_option": null
+  "label": "no_hallucination"
 }
 ```
 
