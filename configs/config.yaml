@@ -4,7 +4,7 @@ experiment:
   log_dir: "logs"
 
 paths:
-  benchmark_project_dir: "/home/dell/data1/arabic_hallu_benchmark"
+  benchmark_project_dir: "Hallucination-Detection-Find-the-Truth"
 
 models:
   "QCRI/Fanar-1-9B-Instruct": false
