@@ -13,7 +13,7 @@ models:
 domains:
   islamic:
     enabled: true
-    data_dir: "/home/dell/Hallucinatuion/Hallucination-Detection-Find-the-Truth/data/islamic/dev_subtask3-1_gold.json"
+    data_dir: "data/islamic/dev_subtask3-1_gold.json"
   general_culture:
     enabled: false
-    data_dir: "/home/dell/Hallucinatuion/Hallucination-Detection-Find-the-Truth/data/general_culture/dev_subtask3-2_gold.json"
+    data_dir: "data/general_culture/dev_subtask3-2_gold.json"
