@@ -40,8 +40,8 @@ TASK_REGISTRY: dict[str, dict] = {
     },
     "2": {
         "name": "General Cultural Domain",
-        "train_path": "data/general_culture/general_train.json",
-        "dev_path": "data/general_culture/general_dev.json",
+        "train_path": "data/general_culture/train_subtask3-2.json",
+        "dev_path": "data/general_culture/dev_subtask3-2.json",
     },
 }
 

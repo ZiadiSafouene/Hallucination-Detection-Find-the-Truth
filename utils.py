@@ -156,7 +156,7 @@ def compute_metrics(
     *,
     alpha: float = EVAL_ALPHA,
     beta: float = EVAL_BETA,
-) -> dict[str, float]:
+) -> dict:
     """Compute hallucination detection and option accuracy metrics.
 
     Args:
